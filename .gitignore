@@ -1,0 +1,19 @@
+# Secrets
+app/.env
+
+# Virtual environments
+.venv/
+venv/
+
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+
+# Local database leftovers
+*.db
+*.sqlite3
+
+# OS/system leftovers
+Thumbs.db
+Desktop.ini
+.DS_Store
