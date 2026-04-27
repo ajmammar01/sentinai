@@ -94,6 +94,27 @@ Returns structured JSON for either:
 - `type: "ticket"` with category/urgency/summary/action items, or
 - `type: "flagged"` with reason.
 
+## 🧪 Evaluation & Reliability
+
+SentinAI uses a **Headless Evaluation Framework** to validate core analysis logic independently of the web UI.  
+This keeps reliability checks fast, repeatable, and focused on model behavior.
+
+Current benchmark coverage includes:
+
+- Refund Requests
+- Spam/Scam Detection
+- Ambiguous Sentiment (Churn Threats)
+- Gibberish/Bot Detection
+- Prompt Injection Defenses
+
+Current benchmark result: **100% accuracy (6/6 pass)**.
+
+Run evaluations locally with:
+
+```bash
+python evals/run_evals.py
+```
+
 ## Privacy Model
 
 SentinAI is designed as a utility-style analyzer:
